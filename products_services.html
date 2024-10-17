@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elsy Medical Products and Services.">
+    <title>Products & Services - Elsy Medical</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/logo_styles.css"> 
+    <style>
+        /* Additional Styles for Product Layout */
+        .product {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .product-images {
+            flex: 1;
+        }
+
+        .product-images img, .product-images video {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        /* Specific fix for video positioning */
+        .product-video-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product-video-wrapper img {
+            flex: 1;
+        }
+
+        .product-video-wrapper video {
+            flex: 1;
+        }
+
+        .toc {
+            margin-bottom: 30px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+
+        .toc li {
+            margin-bottom: 10px;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: #004080;
+            font-weight: bold;
+        }
+
+        .toc a:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="images/company_logo.jpg" alt="Elsy Medical Logo" class="company-logo">
+		<h1>Our Products & Services</h1>
+		    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products_services.html">Products & Services</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<div class="container">
+    <!-- Table of Contents for Fast Navigation -->
+    <div class="toc">
+        <h2>Product List</h2>
+        <ul>
+            <li><a href="#PEF_generator">Battery-Powered High-Voltage Pulsed Electric Field Generator</a></li>
+            <li><a href="#applicator_skin">E-Biopsy Electroporation-Based Bioliquids Handheld Extractor for Skin <i>in vivo</i></a></li>
+            <li><a href="#applicator_laboratory">E-Biopsy Electroporation-Based Bioliquids Extractor for Laboratory use <i>ex vivo</i></a></li>
+            <li><a href="#sample_processing">Sample Processing</a></li>
+        </ul>
+    </div>
+
+    <!-- Product 1 -->
+    <div id="PEF_generator" class="product">
+        <div class="product-images">
+            <img src="images/prdct_PEF_generator.jpg" alt="Battery-Powered High-Voltage Pulsed Electric Field Generator">
+            <img src="images/prdct_PEF_generator_sw_interface.jpg" alt="Software User Interface for E-Biopsy Devices">
+            <img src="images/prdct_PEF_pulse_shape.jpg" alt="Pulse Shape Profile on Excised Human Skin">
+        </div>
+        <div class="product-description">
+            <h2>Battery-Powered High-Voltage Pulsed Electric Field Generator</h2>
+            <p>This compact and efficient pulsed electric field generator is designed for advanced bioengineering applications. Powered by a battery, it provides reliable and precise control over high-voltage electric pulses for various research and clinical needs.</p>
+            <p><b>Technical Specifications:</b>
+            <ul>
+                <li>Maximum amplitude: 950 V</li>
+                <li>Maximum current: 5 A</li>
+                <li>Pulse duration: 10–100 µs</li>
+                <li>Pulse repetition rate: up to 25 Hz</li>
+            </ul></p>
+            <p>The device’s portability and robust technical features make it ideal for on-site applications in electroporation and other bioelectric experiments.</p>
+        </div>
+    </div>
+
+    <!-- Product 2 (Video Fix Applied) -->
+    <div id="applicator_skin" class="product">
+        <div class="product-video-wrapper">
+            <img src="images/prdct_applicator_skin.jpg" alt="E-Biopsy Electroporation-Based Bioliquids Handheld Extractor for Skin">
+            <video controls>
+                <source src="images/prdct_skin_sampling.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="product-description">
+            <h2>E-Biopsy Electroporation-Based Bioliquids Handheld Extractor for Skin <i>in vivo</i> applications in Dermatology</h2>
+            <p>The handheld E-Biopsy extractor is a state-of-the-art, non-destructive tool for extracting bioliquids from skin tissue samples via electroporation technology. Designed for portability and ease of use, it provides precise molecular sampling while maintaining the integrity of the tissue. Compatible with G-30 needles, this handheld device is ideal for <i>in vivo</i> clinical applications, offering unmatched precision and flexibility for real-time sample analysis.</p>
+        </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div id="applicator_laboratory" class="product">
+        <div class="product-images">
+            <img src="images/prdct_applicator_laboratory.jpg" alt="E-Biopsy Electroporation-Based Bioliquids Extractor for Laboratory use">
+        </div>
+        <div class="product-description">
+            <h2>E-Biopsy Electroporation-Based Bioliquids Extractor for Laboratory use <i>ex vivo</i> applications in Research and Pathology</h2>
+            <p>The E-Biopsy extractor is a cutting-edge, non-destructive device designed for precise extraction of bioliquids from excised tissue samples using electroporation technology. Optimized for static operation, it ensures efficient molecular sampling without damaging the tissue structure. Compatible with G-30 needles, this extractor is ideal for clinical and research applications, offering unparalleled precision in sample analysis while maintaining tissue integrity for further examination.</p>
+        </div>
+    </div>
+
+    <!-- Service 1 (Now in Product Layout) -->
+    <div id="sample_processing" class="product">
+        <div class="product-images">
+            <img src="images/srvc_sample_processing.jpg" alt="Sample Processing">
+        </div>
+        <div class="product-description">
+            <h2>Sample Digitalization and Analysis</h2>
+            <p>Our consulting service offers precise digitalization and analysis of samples, providing identification and quantification of molecular content. Our expert team uses cutting-edge technologies to ensure the highest level of accuracy and reliability for healthcare providers.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Elsy Medical. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
